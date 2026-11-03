@@ -14,7 +14,7 @@ To perform regular differncing,seasonal adjustment and log transformatio on inte
 DailyDelhiClimate
 
 ### PROGRAM:
-```
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,7 +22,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 train = pd.read_csv("DailyDelhiClimateTrain.csv")
 test = pd.read_csv("DailyDelhiClimateTest.csv")
 ```
-```
+```python
 for df in (train, test):
     df.columns = df.columns.str.strip()
     df["date"] = pd.to_datetime( df["date"], errors="coerce")
@@ -71,7 +71,7 @@ print(data.head())
 ```
 <img width="625" height="165" alt="image" src="https://github.com/user-attachments/assets/e091cdde-7503-428e-bdd3-c57c7389e78c" />
 
-```
+```python
 data["temp_diff"] = (data["meantemp"] - data["meantemp"].shift(1))
 result = seasonal_decompose(data["meantemp"],model="additive", period=period)
 data["temp_residual"] = result.resid
@@ -85,7 +85,7 @@ print("\nTransformed Data:")
 print(data.head(10).round(4).to_string())
 ```
 <img width="806" height="259" alt="image" src="https://github.com/user-attachments/assets/5c0dbb3c-d6c5-45f9-95a4-83ddbe26dfe3" /><BR>
-```
+```python
 
 
 
