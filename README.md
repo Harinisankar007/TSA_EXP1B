@@ -152,12 +152,10 @@ plt.show()
 ### OUTPUT:
 
 ## ORIGINAL DATA
-
 <img width="1174" height="291" alt="image" src="https://github.com/user-attachments/assets/d43b1054-b142-466d-b616-de604a7c74cf" />
 
 
 ## REGULAR DIFFERENCING:
-
 <img width="1180" height="298" alt="image" src="https://github.com/user-attachments/assets/f13a3ec5-e138-4dc2-a670-b2248bbdd887" />
 
 
@@ -166,8 +164,14 @@ plt.show()
 
 
 ## LOG TRANSFORMATION:
-
 <img width="1172" height="319" alt="image" src="https://github.com/user-attachments/assets/d7e24e28-9e87-46c8-8935-a018a8e966b4" />
+
+## LOG TRANSFORMATION AND REGULAR DIFFERENCING :
+<img width="1107" height="276" alt="image" src="https://github.com/user-attachments/assets/15d73650-47ac-4357-a52b-4f9b1ef156e1" />
+
+## DECOMPOSITION RESIDUALS OF LOG - DIFFERENCED OF DATA
+<img width="1102" height="291" alt="image" src="https://github.com/user-attachments/assets/bf4ef369-8bcd-4780-ab5e-97b97dd2ecde" />
+
 
 ## FINAL COMPARISON
 
